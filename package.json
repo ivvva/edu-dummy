@@ -1,0 +1,24 @@
+{
+  "name": "edu-dummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivvva/edu-dummy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivvva/edu-dummy/issues"
+  },
+  "homepage": "https://github.com/ivvva/edu-dummy#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}
