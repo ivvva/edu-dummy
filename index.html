@@ -20,10 +20,26 @@
       <div class="w-20">
         <img src="/assets/logo-dummy.png" />
       </div>
-      <a href="#">Home</a>
-      <a href="#">Courses</a>
-      <a href="#">Our Team</a>
-      <a href="#">Schedule</a>
+      <navbar id="nav" class="flex justify-around p-10 w-full">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Our Team</a>
+        <a href="#">Schedule</a>
+      </navbar>
+      <div
+        id="menu"
+        class="static w-20 h-full flex justify-center cursor-pointer p-1"
+      >
+        <span id="middle" class="absolute w-6 h-1 bg-black rounded-2xl"></span>
+        <span
+          id="top"
+          class="absolute w-8 h-1 bg-black translate-y-2 rounded-2xl"
+        ></span>
+        <span
+          id="bottom"
+          class="absolute w-8 h-1 bg-black -translate-y-2 rounded-2xl"
+        ></span>
+      </div>
     </nav>
     <section
       class="flex items-center justify-between bg-[#EBECF0] mx-24 rounded-xl my-14"
@@ -100,4 +116,5 @@
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>
