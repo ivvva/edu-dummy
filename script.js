@@ -8,25 +8,10 @@ nav.style.visibility = 'hidden'
 nav.style.opacity = '0'
 nav.style.transform = 'translateX(300px)'
 
-// menu.addEventListener('click', () => {
-//   middle.style.transform = 'translateX(50px)'
-//   middle.style.opacity = '0'
-//   middle.style.transition = "all 1s"
-//   topSpan.style.transform = 'rotate(45deg)'
-//   topSpan.style.transition = "all 1s"
-//   bottom.style.transform = 'rotate(-45deg)'
-//   bottom.style.transition = "all 1s"
-//   nav.style.visibility = 'visible'
-//   nav.style.opacity = '100'
-//   nav.style.transform = 'translateX(0px)'
-//   nav.style.transition = "all 1s"
-//   menu.classList.add('active')
-// })
-
 menu.addEventListener('click', () => {
   if (menuActive === false) {
     openMenu()
-  } else if(menuActive === true) {
+  } else if (menuActive === true) {
     closeMenu()
   }
 })
