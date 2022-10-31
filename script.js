@@ -4,6 +4,18 @@ const bottom = document.getElementById('bottom')
 const topSpan = document.getElementById('top')
 const nav = document.getElementById('nav')
 let menuActive = false
+
+let typed = new Typed('#text-second', {
+  strings: ['Online', 'Effective', 'Fast'],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+  loopCount: Infinity,
+  backDelay: 700,
+})
+
+
+
 nav.style.visibility = 'hidden'
 nav.style.opacity = '0'
 nav.style.transform = 'translateX(300px)'
@@ -47,7 +59,6 @@ function closeMenu() {
   nav.style.transition = "all 1s"
   menuActive = false
 }
-
 
 
 

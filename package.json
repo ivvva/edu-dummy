@@ -20,5 +20,8 @@
   "homepage": "https://github.com/ivvva/edu-dummy#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.12"
   }
 }
