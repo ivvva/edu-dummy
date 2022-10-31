@@ -21,10 +21,10 @@
         <img src="/assets/logo-dummy.png" />
       </div>
       <navbar id="nav" class="flex justify-around p-10 m-0 text-2xl">
-        <a class="pr-20" href="#">Home</a>
-        <a class="pr-20" href="#">Courses</a>
-        <a class="pr-20" href="#">Our Team</a>
-        <a class="pr-20" href="#">Schedule</a>
+        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Home</a>
+        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Courses</a>
+        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Our Team</a>
+        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Schedule</a>
       </navbar>
       <div
         id="menu"
@@ -42,25 +42,35 @@
       </div>
     </nav>
     <section
-      class="flex items-center justify-between bg-[#EBECF0] mx-24 rounded-xl my-8 mb-14"
+      class="flex items-center justify-between shadow-lg mx-24 rounded-xl my-8 mb-14"
     >
+    <img class="relative h-96" src="assets/blob.png" />
       <div class="flex items-center flex-col">
         <h1
           id="text-first"
-          class="text-[#FFD612] relative font-bold text-7xl ml-20 my-9"
+          class="text-[#FFD612] absolute font-bold text-7xl mr-10 mb-32 top-96"
         >
           <span class="text-[#010203]">Study </span
           ><span class="text-[#FFD612]" id="text-second"></span>
         </h1>
       </div>
+
       <button
-        class="bg-[#FFD612] absolute z-30 h-20 w-96 px-16 rounded-xl bottom-80 mb-10 flex justify-around items-center ml-28 text-3xl font-medium"
+        class="bg-[#FFD612] shadow-xl absolute z-30 h-20 w-96 left-96 px-16 rounded-xl bottom-80 mb-10 flex justify-around items-center ml-28 text-3xl font-medium hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
       >
         Sign Up
-        <img src="assets/arrow-right.png" class="w-14 ml-2" />
+        <img src="assets/arrow-right.png" class="h-8 animate-right" />
       </button>
       <div class="w-1/3 mr-44">
-        <img src="assets/school.png" />
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_DMgKk1.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
 
@@ -69,7 +79,7 @@
         <img src="assets/layered-waves-haikei (2).svg" />
       </div>
       <div
-        class="bg-[#FFFF] z-10 w-1/4 rounded-xl relative m-14 p-11 items-center justify-start h-[30rem] mt-20 my-16"
+        class="bg-[#FFFF] z-10 w-1/4 rounded-xl relative m-14 p-11 items-center shadow-lg justify-start h-[30rem] mt-20 my-16"
       >
         <h1 class="font-bold text-4xl mb-6">Data Analysis</h1>
         <div class="w-[100%] animate-float mr-40 absolute left-80 bottom-20">
@@ -85,14 +95,14 @@
           and supporting decision-making
         </h2>
         <button
-          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 mt-20"
+          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 mt-20 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
         >
           Start Learning
         </button>
       </div>
 
       <div
-        class="bg-[#FFFF] z-10 w-1/4 rounded-xl relative m-14 p-11 items-center justify-start h-[30rem] mt-96"
+        class="bg-[#FFFF] z-10 w-1/4 rounded-xl relative m-14 p-11 items-center shadow-lg justify-start h-[30rem] mt-96"
       >
         <h1 class="font-bold text-3xl mb-6">Social Media Marketing</h1>
         <div class="w-[100%] animate-float mr-44 absolute -left-64 -bottom-24">
@@ -104,7 +114,7 @@
           online based digital technologies.
         </h2>
         <button
-          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 -mt-96"
+          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 -mt-96 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
         >
           Start Learning
         </button>
