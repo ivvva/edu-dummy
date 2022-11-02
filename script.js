@@ -5,6 +5,24 @@ const topSpan = document.getElementById('top')
 const nav = document.getElementById('nav')
 let menuActive = false
 
+const observer = new IntersectionObserver((elements) => {
+  elements.forEach(element => {
+    if (element.isIntersecting) {
+      console.log(element)
+      element.target.style.opacity = '100'
+      element.target.style.visibility = 'visible'
+      element.target.style.transition = 'all 1.5s'
+    } else {
+      element.target.style.opacity = '0'
+      element.target.style.visibility = 'invisible'
+      element.target.style.transition = 'all 1.5s'
+    }
+  });
+})
+
+const hiddenElements = document.querySelectorAll('.fade')
+hiddenElements.forEach((element) => observer.observe(element))
+
 let typed = new Typed('#text-second', {
   strings: ['Online', 'Effective', 'Fast'],
   typeSpeed: 100,
@@ -13,8 +31,6 @@ let typed = new Typed('#text-second', {
   loopCount: Infinity,
   backDelay: 700,
 })
-
-
 
 nav.style.visibility = 'hidden'
 nav.style.opacity = '0'

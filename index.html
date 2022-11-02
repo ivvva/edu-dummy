@@ -13,18 +13,41 @@
       href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Edu Project Dummy</title>
   </head>
-  <body class="bg-[#FCFCFC] font-trispace">
+
+  <body class="bg-[#FCFCFC] font-montserrat scroll-smooth from:">
     <nav class="flex items-center justify-around mx-28 text-[#010203]">
       <div class="w-36">
-        <img src="/assets/logo-dummy.png" />
+      <a href="#"><img class="hover:scale-105 ease-out duration-200" src="/assets/logo-dummy.png" /></a>  
       </div>
       <navbar id="nav" class="flex justify-around p-10 m-0 text-2xl">
-        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Home</a>
-        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Courses</a>
-        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Our Team</a>
-        <a class="pr-20 hover:text-[#FFD612] ease-in-out duration-200" href="#">Schedule</a>
+        <a
+          class="pr-20 hover:text-[#FFD612] ease-in-out duration-200 visited:underline decoration-[#FFD612]"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="pr-20 hover:text-[#FFD612] ease-in-out duration-200"
+          href="#courses"
+          >Courses</a
+        >
+        <a
+          class="pr-20 hover:text-[#FFD612] ease-in-out duration-200"
+          href="#team"
+          >Our Team</a
+        >
+        <a
+          class="pr-20 hover:text-[#FFD612] ease-in-out duration-200"
+          href="#schedule"
+          >Schedule</a
+        >
       </navbar>
       <div
         id="menu"
@@ -42,9 +65,10 @@
       </div>
     </nav>
     <section
-      class="flex items-center justify-between shadow-lg mx-24 rounded-xl my-8 mb-14"
+      id="home"
+      class="fade flex items-center justify-between shadow-lg mx-24 rounded-xl my-8 mb-14"
     >
-    <img class="relative h-96" src="assets/blob.png" />
+      <img class="relative h-96" src="assets/blob.png" />
       <div class="flex items-center flex-col">
         <h1
           id="text-first"
@@ -56,13 +80,12 @@
       </div>
 
       <button
-        class="bg-[#FFD612] shadow-xl absolute z-30 h-20 w-96 left-96 px-16 rounded-xl bottom-80 mb-10 flex justify-around items-center ml-28 text-3xl font-medium hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
+        class="bg-[#FFD612] shadow-xl absolute z-30 h-20 w-96 left-96 px-16 rounded-xl bottom-80 mb-10 flex justify-around justify-center items-center ml-28 text-3xl font-medium hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
       >
         Sign Up
         <img src="assets/arrow-right.png" class="h-8 animate-right" />
       </button>
       <div class="w-1/3 mr-44">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player
           src="https://assets1.lottiefiles.com/packages/lf20_DMgKk1.json"
           background="transparent"
@@ -74,8 +97,8 @@
       </div>
     </section>
 
-    <section class="flex justify-around bg-[#fff1aa]">
-      <div class="w-full z-10 absolute m-0">
+    <section id="courses" class="fade flex justify-around bg-[#fff1aa]">
+      <div class="fade w-full z-10 absolute m-0">
         <img src="assets/layered-waves-haikei (2).svg" />
       </div>
       <div
@@ -85,7 +108,7 @@
         <div class="w-[100%] animate-float mr-40 absolute left-80 bottom-20">
           <img class="drop-shadow-xl" src="assets/data.png" />
         </div>
-        <h2 class="text-xl">
+        <h2 class="text-xl leading-8">
           Data analysis is a <br />
           process of inspecting,<br />
           transforming and modeling<br />
@@ -95,7 +118,7 @@
           and supporting decision-making
         </h2>
         <button
-          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 mt-20 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
+          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center justify-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 mt-12 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
         >
           Start Learning
         </button>
@@ -108,25 +131,107 @@
         <div class="w-[100%] animate-float mr-44 absolute -left-64 -bottom-24">
           <img class="drop-shadow-xl" src="assets/smm.png" />
         </div>
-        <h2 class="text-xl flex justify-end ml-28">
+        <h2 class="text-xl flex leading-9 justify-end ml-28">
           Social media marketing is the use of social media platforms and
           websites to promote a product or service. Digital marketing uses the
           online based digital technologies.
         </h2>
         <button
-          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 -mt-96 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
+          class="bg-[#FFD612] h-20 w-96 p-5 flex items-center rounded-2xl justify-center font-semibold text-2xl tracking-tight drop-shadow-lg w-60 ml-72 -mt-[26rem] hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
         >
           Start Learning
         </button>
       </div>
     </section>
 
-    <section>
-      <div class="w-full absolute m-0">
+    <section id="team">
+      <div class="fade w-full absolute m-0">
         <img src="assets/layered-waves-haikei (4).svg" />
       </div>
     </section>
+
+    <section class="fade flex justify-center items-center">
+      <lottie-player
+        class="relative mb-20"
+        src="https://lottie.host/7840f3a2-82e1-4f24-a166-5a66c813e6a0/4rcXEQQP8A.json"
+        background="transparent"
+        speed="1"
+        style="width: 1300px; height: 1300px"
+        loop
+        autoplay
+      ></lottie-player>
+      <div
+        class="absolute z-10 text-3xl font-medium leading-[60px] left-[28rem] mb-[50rem] bg-white p-14 rounded-3xl shadow-xl"
+      >
+        <h2>
+          We have the best team<br />who's going to help<br />
+          you achieve<br />
+          all your dreams!
+        </h2>
+      </div>
+      <div>
+        <button
+          class="bg-[#FFD612] absolute h-24 w-[28rem] p-5 flex items-center justify-center rounded-2xl font-semibold text-3xl tracking-tight drop-shadow-lg w-60 right-96 mt-10 hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+    <section
+      id="schedule"
+      class="fade flex flex-col justify-center items-center"
+    >
+      <div>
+        <h1 class="text-6xl font-extrabold text-[#FFD612] top-10">
+          Start Learning Now!
+        </h1>
+      </div>
+      <div class="ml-16 flex">
+        <lottie-player
+          class="relative -z-10 -left-96"
+          src="https://lottie.host/f82b151c-4330-467e-a823-ba226023e4ce/3vvTVSHYUH.json"
+          background="transparent"
+          speed="1"
+          style="width: 1020px; height: 1020px"
+          loop
+          autoplay
+        ></lottie-player>
+        <img class="absolute mb-96" src="assets/Calendar UI Light.png" />
+      </div>
+      <button
+        class="bg-[#FFD612] absolute h-24 w-[28rem] z-50 p-5 mt-[60rem] flex items-center justify-center rounded-2xl font-semibold text-3xl tracking-tight drop-shadow-lg hover:shadow-lg hover:-translate-y-2 ease-out duration-300 active:translate-y-2 active:shadow-xl"
+      >
+        Book a Lesson
+      </button>
+    </section>
+    <div class="fade w-full -z-10 absolute m-0 mt-10">
+      <img src="assets/layered-waves-haikei (2).svg" />
+    </div>
+    <footer
+      class="fade h-56 bg-[#fff1aa] mt-60 flex justify-evenly items-center"
+    >
+      <a href="#">
+        <img
+          src="assets/facebook.png"
+          class="h-16 absolute z-30 hover:scale-125 ease-in-out duration-200"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="assets/instagram.png"
+          class="h-16 absolute z-30 hover:scale-125 ease-in-out duration-200"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="assets/twitter.png"
+          class="h-16 absolute z-30 hover:scale-125 ease-in-out duration-200"
+        />
+      </a>
+    </footer>
   </body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  s
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="script.js"></script>
 </html>

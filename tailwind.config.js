@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'trispace': ['Trispace']
+        'trispace': ['Trispace'],
+        'montserrat': ['Montserrat']
       },
       keyframes: {
         float: {
